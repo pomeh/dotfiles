@@ -392,30 +392,6 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/C/Users/Romain/Desktop/test.html",
-					"settings":
-					{
-						"buffer_size": 325,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/D/romain/dotfiles/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-					"settings":
-					{
-						"buffer_size": 259,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/ssh.bat",
-					"settings":
-					{
-						"buffer_size": 43,
-						"line_ending": "Windows"
-					}
-				}
 			],
 			"build_system": "",
 			"command_palette":
@@ -629,6 +605,11 @@
 			},
 			"file_history":
 			[
+				"/C/Users/Romain/Desktop/test.html",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/SideBarGit/.gitignore",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/Git/.gitignore",
+				"/C/ssh.bat",
 				"/D/romain/dotfiles/.gitignore",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 				"/D/romain/dotfiles/Sublime Text 2/Packages/SideBarGit/Context.sublime-menu",
@@ -636,7 +617,6 @@
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Tortoise/Default (Windows).sublime-keymap",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Tortoise/Tortoise.sublime-settings",
 				"/D/romain/dotfiles/Sublime Text 2/Packages/SideBarGit/SideBarGit.py",
-				"/D/romain/dotfiles/Sublime Text 2/Packages/SideBarGit/.gitignore",
 				"/D/romain/dotfiles/Sublime Text 2/Packages/SublimeCodeIntel/libs/codeintel2/lib_srcs/node.js/global_objects.js",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/SideBarGit/SideBarGit.sublime-settings",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/hello.sublime-snippet",
@@ -697,7 +677,7 @@
 			},
 			"find_in_files":
 			{
-				"height": 90.0,
+				"height": 0.0,
 				"where_history":
 				[
 					"D:\\romain\\dotfiles\\Sublime Text 2\\Packages\\SideBarGit"
@@ -708,6 +688,10 @@
 				"case_sensitive": true,
 				"find_history":
 				[
+					"meta",
+					"(pyc|cache)",
+					"^.*[^(pyc|cache)].*$",
+					"(pyc|cache)",
 					" -",
 					"i",
 					"push",
@@ -735,7 +719,7 @@
 					"		",
 					"plugin"
 				],
-				"highlight": false,
+				"highlight": true,
 				"in_selection": false,
 				"preserve_case": false,
 				"regex": true,
@@ -757,106 +741,8 @@
 			"groups":
 			[
 				{
-					"selected": 2,
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/C/Users/Romain/Desktop/test.html",
-							"settings":
-							{
-								"buffer_size": 325,
-								"regions":
-								{
-									"mark":
-									{
-										"flags": 144,
-										"icon": "dot",
-										"regions":
-										[
-											[
-												324,
-												324
-											]
-										],
-										"scope": "mark"
-									}
-								},
-								"selection":
-								[
-									[
-										45,
-										45
-									]
-								],
-								"settings":
-								{
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/D/romain/dotfiles/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-							"settings":
-							{
-								"buffer_size": 259,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										259,
-										259
-									]
-								],
-								"settings":
-								{
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/JavaScript/JSON.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/C/ssh.bat",
-							"settings":
-							{
-								"buffer_size": 43,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										43,
-										43
-									]
-								],
-								"settings":
-								{
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/Batch File/Batch File.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						}
 					]
 				}
 			],
@@ -895,11 +781,7 @@
 			{
 				"height": 126.0
 			},
-			"output.unsaved_changes":
-			{
-				"height": 225.0
-			},
-			"position": "0,2,3,-32000,-32000,-1,-1,695,243,159,899",
+			"position": "0,2,3,-1,-1,-1,-1,695,243,159,899",
 			"replace":
 			{
 				"height": 62.0
@@ -910,6 +792,14 @@
 				"height": 0.0,
 				"selected_items":
 				[
+					[
+						".gitign",
+						"Sublime Text 2/Packages/SideBarGit/.gitignore"
+					],
+					[
+						".gitigno",
+						"Sublime Text 2/Packages/Git/.gitignore"
+					],
 					[
 						".gii",
 						".gitignore"
