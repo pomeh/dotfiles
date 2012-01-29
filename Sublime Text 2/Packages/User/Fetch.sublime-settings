@@ -1,6 +1,7 @@
 {
 	"files":
 	{
+		"h5bp index.html": "https://raw.github.com/h5bp/html5-boilerplate/master/index.html",
 		"jquery": "http://code.jquery.com/jquery.min.js"
 	},
 	"packages":

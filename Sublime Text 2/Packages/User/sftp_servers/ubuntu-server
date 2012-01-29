@@ -1,0 +1,25 @@
+{
+    // The tab key will cycle through the settings when first created
+    
+    // sftp, ftp or ftps
+    "type": "sftp",
+    
+    "host": "192.168.1.11",
+    "user": "pomeh",
+    //"password": "password",
+    //"port": "22",
+    
+    "remote_path": "/home/pomeh",
+    //"file_permissions": "664",
+    //"dir_permissions": "775",
+    
+    "connect_timeout": 30,
+    //"ftp_passive_mode": true,
+    //"ssh_key_file": "~/.ssh/id_rsa",
+    //"sftp_flags": "-F /path/to/ssh_config",
+    
+    //"preserve_modification_times": false,
+    //"remote_time_offset_in_hours": 0,
+    //"remote_encoding": "utf-8",
+    //"remote_locale": "C",
+}
