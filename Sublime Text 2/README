@@ -1,0 +1,1 @@
+How to deploy:Get the location of user Sublime Text 2 folder (Browse Packages command)mklink /J "C:\Users\Romain\AppData\Roaming\Sublime Text 2" "/path/to/dotfiles/Sublime Text 2"
