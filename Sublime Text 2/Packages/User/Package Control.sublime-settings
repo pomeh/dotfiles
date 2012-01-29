@@ -1,0 +1,22 @@
+{
+	"auto_upgrade_last_run": 1327854711,
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"ColorPicker",
+		"Git",
+		"Goto-CSS-Declaration",
+		"GotoRecent",
+		"HTML5",
+		"IndentGuides",
+		"Nettuts+ Fetch",
+		"Nodejs",
+		"Package Control",
+		"PhpDoc",
+		"SFTP",
+		"SublimeCodeIntel",
+		"Tag",
+		"TrailingSpaces",
+		"WordHighlight"
+	]
+}
