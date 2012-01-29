@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1327854711,
+	"auto_upgrade_last_run": 1327877393,
 	"installed_packages":
 	[
 		"BracketHighlighter",
@@ -14,8 +14,10 @@
 		"Package Control",
 		"PhpDoc",
 		"SFTP",
+		"SideBarGit",
 		"SublimeCodeIntel",
 		"Tag",
+		"Tortoise",
 		"TrailingSpaces",
 		"WordHighlight"
 	]

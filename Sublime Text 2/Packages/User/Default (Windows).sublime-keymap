@@ -1,4 +1,5 @@
 [
 	{ "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
-	{ "keys": ["alt+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} }
+	{ "keys": ["alt+shift+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+	{ "keys": ["alt+c,alt+s"], "command": "side_bar_git_status", "args": {"paths": []} }
 ]

@@ -1,0 +1,13 @@
+[
+	{ "caption": "-" },
+	{ "caption": "Tortoise Status…", "command": "tortoise_status", "args": {"paths": []} },
+	{ "caption": "Tortoise Log…", "command": "tortoise_log", "args": {"paths": []} },
+	{ "caption": "Tortoise Blame…", "command": "tortoise_blame", "args": {"paths": []} },
+	{ "caption": "Tortoise Sync…", "command": "tortoise_sync", "args": {"paths": []} },
+	{ "caption": "Tortoise Commit…", "command": "tortoise_commit", "args": {"paths": []} },
+	{ "caption": "Tortoise Diff…", "command": "tortoise_diff", "args": {"paths": []} },
+	{ "caption": "Tortoise Add…", "command": "tortoise_add", "args": {"paths": []} },
+	{ "caption": "Tortoise Revert…", "command": "tortoise_revert", "args": {"paths": []} },
+	{ "caption": "Tortoise Remove…", "command": "tortoise_remove", "args": {"paths": []} },
+	{ "caption": "-", "id": "end" }
+]
