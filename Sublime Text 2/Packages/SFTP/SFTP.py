@@ -4,6 +4,7 @@ import os
 import sys
 import time
 import imp
+import re
 
 settings = sublime.load_settings('SFTP.sublime-settings')
 
@@ -29,10 +30,28 @@ if sublime.platform() == 'linux' and settings.get('linux_enable_ssl'):
         except (ImportError) as (e):
             print 'SFTP: ssl module import error - ' + str(e)
 
+reloading = {
+    'happening': False,
+    'shown': False
+}
+
 reload_mods = []
 for mod in sys.modules:
     if (mod[0:5] == 'sftp.' or mod == 'sftp') and sys.modules[mod] != None:
         reload_mods.append(mod)
+        reloading['happening'] = True
+
+# Prevent popups during reload, saving the callbacks for re-adding later
+if reload_mods:
+    old_callbacks = {}
+    hook_match = re.search("<class '(\w+).ExcepthookChain'>", str(sys.excepthook))
+    if hook_match:
+        _temp = __import__(hook_match.group(1), globals(), locals(),
+            ['ExcepthookChain'], -1)
+        ExcepthookChain = _temp.ExcepthookChain
+        old_callbacks = ExcepthookChain.names
+    sys.excepthook = sys.__excepthook__
+
 mods_load_order = [
     'sftp',
     'sftp.times',
@@ -54,6 +73,7 @@ mods_load_order = [
     'sftp.commands',
     'sftp.listeners'
 ]
+
 for mod in mods_load_order:
     if mod in reload_mods:
         reload(sys.modules[mod])
@@ -78,8 +98,45 @@ import sftp.times
 sftp.debug.set_debug(settings.get('debug', False))
 
 
+hook_match = re.search("<class '(\w+).ExcepthookChain'>", str(sys.excepthook))
+
+if not hook_match:
+    class ExcepthookChain(object):
+        callbacks = []
+        names = {}
+
+        @classmethod
+        def add(cls, name, callback):
+            if name == 'sys.excepthook':
+                if name in cls.names:
+                    return
+                cls.callbacks.append(callback)
+            else:
+                if name in cls.names:
+                    cls.callbacks.remove(cls.names[name])
+                cls.callbacks.insert(0, callback)
+            cls.names[name] = callback
+
+        @classmethod
+        def hook(cls, type, value, tb):
+            for callback in cls.callbacks:
+                callback(type, value, tb)
+
+        @classmethod
+        def remove(cls, name):
+            if name not in cls.names:
+                return
+            callback = cls.names[name]
+            del cls.names[name]
+            cls.callbacks.remove(callback)
+else:
+    _temp = __import__(hook_match.group(1), globals(), locals(),
+        ['ExcepthookChain'], -1)
+    ExcepthookChain = _temp.ExcepthookChain
+
+
 # Override default uncaught exception handler
-def uncaught_except(type, value, tb):
+def sftp_uncaught_except(type, value, tb):
     message = ''.join(traceback.format_exception(type, value, tb))
 
     if message.find('/sftp/') != -1 or message.find('\\sftp\\') != -1:
@@ -100,17 +157,26 @@ def uncaught_except(type, value, tb):
                 send_log_path))
             sublime.active_window().run_command('open_file',
                 {'file': sftp.paths.fix_windows_path(send_log_path)})
-        sublime.set_timeout(append_log, 10)
+        if reloading['happening']:
+            if not reloading['shown']:
+                sublime.error_message('SFTP: Sublime SFTP was just upgraded' +
+                    ', please restart Sublime to finish the upgrade')
+                reloading['shown'] = True
+        else:
+            sublime.set_timeout(append_log, 10)
 
-    sys.__excepthook__(type, value, tb)
-if sys.excepthook.__name__ != 'uncaught_except':
-    sys.excepthook = uncaught_except
+if reload_mods and old_callbacks:
+    for name in old_callbacks:
+        ExcepthookChain.add(name, old_callbacks[name])
+
+ExcepthookChain.add('sys.excepthook', sys.__excepthook__)
+ExcepthookChain.add('sftp_uncaught_except', sftp_uncaught_except)
+
+if sys.excepthook != ExcepthookChain.hook:
+    sys.excepthook = ExcepthookChain.hook
 
 
 def unload_handler():
-    # Kill all connections
     SftpThread.cleanup()
 
-    # Reset the exception handler
-    if sys.excepthook.__name__ == 'uncaught_except':
-        sys.excepthook = sys.__excepthook__
+    ExcepthookChain.remove('sftp_uncaught_except')
