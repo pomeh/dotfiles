@@ -16,6 +16,15 @@ alias cl='clear; l'
 alias ping='ping -c 4'
 
 
-alias monip='wget -q -O - http://monip.org/ | grep "IP :" | cut -d : -f 2 | cut -d \< -f 1'
+alias myip='wget -q -O - http://monip.org/ | grep "IP :" | cut -d : -f 2 | cut -d \< -f 1'
 
-alias ..="cd .."
+alias ..="cd .." # can then do .. .. .. to move up multiple directories.
+alias ...='cd ..; cd ..;'
+alias ducks='du -cks * | sort -rn | head -20' # Lists the size of all the folders
+
+alias home='cd ~' # the tilda is too hard to reach
+alias b='cd -'
+
+# useful command to find what you should be aliasing:
+alias profileme="history 1 | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
+
