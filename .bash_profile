@@ -4,4 +4,6 @@ export PATH=$PATH:${ANT_HOME}/bin
 
 
 source ~/.bash_aliases
+unset MAILCHECK
+
 
