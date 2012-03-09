@@ -1,0 +1,1221 @@
+{
+	"folder_history":
+	[
+		"/D/romain/dotfiles",
+		"/C/Users/Romain/.ssh",
+		"/C/Users/Romain/Desktop",
+		"/C/downloads"
+	],
+	"last_window_id": 5,
+	"settings":
+	{
+		"new_window_height": 480.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"html",
+						"html	html"
+					],
+					[
+						"input",
+						"input	input - text"
+					],
+					[
+						"link",
+						"link	link - stylesheet"
+					],
+					[
+						"video",
+						"video	<video> with legacy object"
+					],
+					[
+						"for",
+						"foreach	foreach …"
+					]
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 357.0,
+				"selected_items":
+				[
+					[
+						"pacli",
+						"Package Control: List Packages"
+					],
+					[
+						"brow",
+						"Preferences: Browse Packages"
+					],
+					[
+						"pacon",
+						"Package Control: Install Package"
+					],
+					[
+						"co",
+						"Color picker"
+					],
+					[
+						"pai",
+						"Package Control: Install Package"
+					],
+					[
+						"snipp",
+						"Snippet: &"
+					],
+					[
+						"snippet",
+						"Snippet: <iframe>"
+					],
+					[
+						"google",
+						"Snippet: Google AJAX Libraries: jQuery"
+					],
+					[
+						"sftp",
+						"Preferences: SFTP Settings"
+					],
+					[
+						"bro",
+						"SFTP: Browse Server…"
+					],
+					[
+						"pal",
+						"Package Control: List Packages"
+					],
+					[
+						"Snippet: for",
+						"Snippet: <?php foreach (…) … <?php endforeach ?>"
+					],
+					[
+						"paci",
+						"Package Control: Install Package"
+					],
+					[
+						"keys",
+						"Preferences: Key Bindings - User"
+					],
+					[
+						"key",
+						"Preferences: Key Bindings - Default"
+					],
+					[
+						"pain",
+						"Package Control: Install Package"
+					],
+					[
+						"pali",
+						"Package Control: List Packages"
+					],
+					[
+						"pacrem",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: List Packages"
+					],
+					[
+						"pacin",
+						"Package Control: Install Package"
+					],
+					[
+						"packl",
+						"Package Control: List Packages"
+					],
+					[
+						"paclis",
+						"Package Control: List Packages"
+					],
+					[
+						"packli",
+						"Package Control: List Packages"
+					],
+					[
+						"pack li",
+						"Package Control: List Packages"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"npm",
+						"Nodejs::NPM::Search"
+					],
+					[
+						"node",
+						"Nodejs::NPM::Command"
+					],
+					[
+						"inst",
+						"Nodejs::NPM::Install"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"ins	",
+						"Package Control: Install Package"
+					],
+					[
+						"packa",
+						"Package Control: List Packages"
+					],
+					[
+						"traillin",
+						"Trailing Spaces: Delete Trailing Spaces"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"settings",
+						"Preferences: Package Control Settings – Default"
+					],
+					[
+						"setting",
+						"Preferences: File Settings - Default"
+					],
+					[
+						"",
+						"Snippet: Lorem ipsum"
+					]
+				],
+				"width": 536.0
+			},
+			"console":
+			{
+				"height": 145.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/ubuntu-server",
+				"/C/users/romain/appdata/local/temp/sublime-sftp-browse-1327860556/ubuntu-server/home/pomeh/.bash_aliases",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nettuts+ Fetch/package-metadata.json",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nettuts+ Fetch/Fetch.py",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nettuts+ Fetch/.gitignore",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nettuts+ Fetch/Fetch.pyc",
+				"/D/romain/dotfiles/.gitignore",
+				"/C/Users/Romain/find",
+				"/D/romain/dotfiles/.gitconfig",
+				"/C/Users/Romain/.gitconfig.old",
+				"/C/Users/Romain/.gitconfig",
+				"/C/Users/Romain/.ssh.bak/id_rsa.pub",
+				"/D/romain/.ssh/id_rsa.pub",
+				"/D/romain/.ssh/id_rsa.ppk",
+				"/D/romain/.ssh/id_rsa",
+				"/C/Users/Romain/.ssh.bak/id_rsa",
+				"/C/Users/Romain/.ssh.bak/config",
+				"/C/Users/Romain/.ssh.bak/known_hosts",
+				"/C/Users/Romain/.ssh.ok/known_hosts",
+				"/D/romain/.ssh/README",
+				"/D/romain/.ssh/known_hosts",
+				"/C/Users/Romain/.ssh.ok/id_rsa.pub",
+				"/C/Users/Romain/.ssh.ok/id_rsa.ppk",
+				"/C/Users/Romain/.ssh.ok/id_rsa",
+				"/C/Users/Romain/.ssh/id_rsa.pub",
+				"/C/Users/Romain/.ssh/id_rsa",
+				"/C/Users/Romain/Desktop/temp.pub",
+				"/D/romain/pomeh13_at_gmail.com.ssh.key.id_rsa.ppk",
+				"/D/romain/pomeh13_at_gmail.com.ssh.key.id_rsa.pub",
+				"/C/Git/.ssh/known_hosts",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/SFTP/SFTP.sublime-settings",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/SFTP/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Settings/Session.sublime_session",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Settings/Auto Save Session.sublime_session",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Installed Packages/Package Control.sublime-package",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nodejs/lib/command_thread.py",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nodejs/lib/__init__.py",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Language - English/en_US.dic",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Language - English/README_en_GB.txt",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Language - English/en_GB.aff",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Default/Global.sublime-settings",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Default/Base File.sublime-settings"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"test_submit",
+					"function",
+					"		",
+					"plugin"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 32.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.sftp":
+			{
+				"height": 126.0
+			},
+			"replace":
+			{
+				"height": 62.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 640.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"ajax",
+						"ajax	Google AJAX Libraries: jQuery"
+					],
+					[
+						"a",
+						"a	<a>"
+					],
+					[
+						"html",
+						"html	basic html doc"
+					],
+					[
+						"doc",
+						"doctype	DOCTYPE HTML"
+					],
+					[
+						"for",
+						"for	for (…) {…} (Improved Native For-Loop)"
+					],
+					[
+						"head",
+						"head	<head>"
+					],
+					[
+						"h5",
+						"h5bp	h5bp"
+					],
+					[
+						"input",
+						"input	input - text"
+					],
+					[
+						"link",
+						"link	link - stylesheet"
+					],
+					[
+						"video",
+						"video	<video> with legacy object"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/C/Users/Romain/Desktop/favoris_home_19_02_12.html",
+					"settings":
+					{
+						"buffer_size": 561043,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "var allLinks = document.querySelectorAll('a'), orderedLinks, emptyLinks, hrefs;\n\nallLinks = Array.prototype.concat.apply( [], allLinks );\n//allLinks = allLinks.splice( 70, 10 );\n\norderedLinks = allLinks;\n/*orderedLinks = orderedLinks.sort(function( a, b ){\n	return ( a.href === b.href ) ? 0 : ( a.href >= b.href ) ? 1 : -1;\n});*/\n\n\nhrefs = orderedLinks.map(function(el) { return el.href; });\nemptyLinks = orderedLinks.filter(function(el) {\n	if( !el.text )\n	{\n		return el.href;\n	}\n});\n\nallLinks.forEach(function( link ) {\n	if( link.getAttribute(\"icon\") )\n	{\n		link.className = \"\"; // \"image\";\n		link.style.backgroundImage = \"url('\" + link.getAttribute(\"icon\") + \"')\";\n		link.style.backgroundRepeat = \"no-repeat\";\n		link.style.paddingLeft = \"20px\";\n	}\n});\n\n\n\n\n0\n",
+					"file": "/C/Users/Romain/Desktop/favoris_js.js",
+					"file_size": 793,
+					"file_write_time": 129741664864310000,
+					"settings":
+					{
+						"buffer_size": 760,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/h5bp.sublime-snippet",
+					"settings":
+					{
+						"buffer_size": 3016,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/JavaScript/for-()-{}.sublime-snippet",
+					"settings":
+					{
+						"buffer_size": 260,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML/html.sublime-snippet",
+					"settings":
+					{
+						"buffer_size": 265,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/C/Users/Romain/AppData/Local/Temp/scp18849/www/cnam/pleiad.html",
+					"settings":
+					{
+						"buffer_size": 108,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Users/Romain/.ssh/id_rsa.pub",
+					"settings":
+					{
+						"buffer_size": 399,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"selected_items":
+				[
+					[
+						"snipajq",
+						"Snippet: Google AJAX Libraries: jQuery"
+					],
+					[
+						"fet",
+						"Fetch"
+					],
+					[
+						"sniphtml",
+						"Snippet: html"
+					],
+					[
+						"packlis",
+						"Package Control: List Packages"
+					],
+					[
+						"snipht",
+						"Snippet: html"
+					],
+					[
+						"pakli",
+						"Package Control: List Packages"
+					],
+					[
+						"java",
+						"Set Syntax: JavaScript"
+					],
+					[
+						"snippet",
+						"Snippet: #!/usr/bin/env"
+					],
+					[
+						"pali",
+						"Package Control: List Packages"
+					],
+					[
+						"pain",
+						"Package Control: Install Package"
+					],
+					[
+						"wrap",
+						"Word Wrap: Toggle"
+					],
+					[
+						"key",
+						"Preferences: Key Bindings - User"
+					],
+					[
+						"pai",
+						"Package Control: Install Package"
+					],
+					[
+						"trail",
+						"Trailing Spaces: Delete Trailing Spaces"
+					],
+					[
+						"synhtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"syntahtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"git",
+						"Set Syntax: Git Commit Message"
+					],
+					[
+						"fetc",
+						"Fetch: Manage remote files"
+					],
+					[
+						"brow",
+						"Preferences: Browse Packages"
+					],
+					[
+						"settings",
+						"Preferences: Global Settings - Default"
+					],
+					[
+						"snihtml",
+						"Snippet: IE Conditional Comment: HTML5 Shim"
+					],
+					[
+						"snipphtml",
+						"Snippet: html"
+					],
+					[
+						"pacli",
+						"Package Control: List Packages"
+					],
+					[
+						"pacon",
+						"Package Control: Install Package"
+					],
+					[
+						"co",
+						"Color picker"
+					],
+					[
+						"snipp",
+						"Snippet: &"
+					],
+					[
+						"google",
+						"Snippet: Google AJAX Libraries: jQuery"
+					],
+					[
+						"sftp",
+						"Preferences: SFTP Settings"
+					],
+					[
+						"bro",
+						"SFTP: Browse Server…"
+					],
+					[
+						"pal",
+						"Package Control: List Packages"
+					],
+					[
+						"Snippet: for",
+						"Snippet: <?php foreach (…) … <?php endforeach ?>"
+					],
+					[
+						"paci",
+						"Package Control: Install Package"
+					],
+					[
+						"keys",
+						"Preferences: Key Bindings - User"
+					],
+					[
+						"pacrem",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: List Packages"
+					],
+					[
+						"pacin",
+						"Package Control: Install Package"
+					],
+					[
+						"packl",
+						"Package Control: List Packages"
+					],
+					[
+						"paclis",
+						"Package Control: List Packages"
+					],
+					[
+						"packli",
+						"Package Control: List Packages"
+					],
+					[
+						"pack li",
+						"Package Control: List Packages"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"npm",
+						"Nodejs::NPM::Search"
+					],
+					[
+						"node",
+						"Nodejs::NPM::Command"
+					],
+					[
+						"inst",
+						"Nodejs::NPM::Install"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"ins	",
+						"Package Control: Install Package"
+					],
+					[
+						"packa",
+						"Package Control: List Packages"
+					],
+					[
+						"traillin",
+						"Trailing Spaces: Delete Trailing Spaces"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"setting",
+						"Preferences: File Settings - Default"
+					],
+					[
+						"",
+						"Snippet: Lorem ipsum"
+					]
+				],
+				"width": 536.0
+			},
+			"console":
+			{
+				"height": 145.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Package Control/certs/ca-bundle.crt",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Package Control/certs/2ef52a20816f8df1e4cb13199caf1e21",
+				"/C/Users/Romain/.ssh/id_rsa",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML5/Elements/html.sublime-snippet",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML5/Javascript Libraries/Google AJAX Libraries - Dojo.sublime-snippet",
+				"/C/Users/Romain/AppData/Local/Temp/scp18849/www/cnam/pleiad.html",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML/HTML.sublime-completions",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/JavaScript/for-()-{}-(faster).sublime-snippet",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Pristine Packages/JavaScript.sublime-package",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+				"/C/Users/Romain/Desktop/pleiad.net.htm",
+				"/C/downloads/id",
+				"/C/downloads/Cours en direct.ram",
+				"/C/downloads/téléchargement",
+				"/C/downloads/Linux CraftBukkit Setup.sh",
+				"/C/downloads/arene piston.schematic",
+				"/C/downloads/GoogleBookmarks.html",
+				"/C/downloads/téléchargement (1)",
+				"/C/downloads/pomeh.vcf",
+				"/C/downloads/search",
+				"/C/Users/Romain/Desktop/FF-Restauration de session - Copie.xht",
+				"/C/Users/Romain/Desktop/FF-Restauration de session.xht",
+				"/C/Users/Romain/Desktop/TrayNotify.reg",
+				"/C/Users/Romain/Desktop/guerin.rsa.key.ppk",
+				"/C/Users/Romain/Desktop/quivaou.txt",
+				"/C/Users/Romain/Desktop/afficheBilletImprime.do",
+				"/C/Users/Romain/Desktop/test.html",
+				"/C/Users/Romain/Desktop/temp.pub",
+				"/C/Users/Romain/Desktop/nour.txt",
+				"/C/Users/Romain/Desktop/muse.txt",
+				"/C/Users/Romain/Desktop/musiques.txt",
+				"/C/Users/Romain/Desktop/youtube.js",
+				"/C/Users/Romain/Desktop/piscine.txt",
+				"/C/Users/Romain/Desktop/test.php",
+				"/C/Users/Romain/Desktop/ascii.txt",
+				"/C/Users/Romain/Desktop/FUSION/Fusion.htm",
+				"/C/Users/Romain/Desktop/fdj-order.html",
+				"/C/Users/Romain/Desktop/fdj-original.html",
+				"/C/Users/Romain/Desktop/fdj-edit.html",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Default/Global.sublime-settings",
+				"//pc-bureau/Romain/__GINCKO/hosts",
+				"/D/romain/dotfiles/.gitconfig",
+				"/D/romain/dotfiles/.gitignore",
+				"/D/romain/dotfiles/README",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/SideBarGit/.gitignore",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/Git/.gitignore",
+				"/C/ssh.bat",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/SideBarGit/Context.sublime-menu",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/SideBarGit/SideBarGitCommands.py",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Tortoise/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Tortoise/Tortoise.sublime-settings",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/SideBarGit/SideBarGit.py",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/SublimeCodeIntel/libs/codeintel2/lib_srcs/node.js/global_objects.js",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/SideBarGit/SideBarGit.sublime-settings",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/hello.sublime-snippet",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/HTML/HTML.sublime-completions",
+				"/D/romain/dotfiles/Sublime Text 2/Packages/HTML/html.sublime-snippet",
+				"/D/romain/dotfiles/Sublime Text 2/Settings/html.sublime-snippet",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/ubuntu-server",
+				"/C/users/romain/appdata/local/temp/sublime-sftp-browse-1327860556/ubuntu-server/home/pomeh/.bash_aliases",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nettuts+ Fetch/package-metadata.json",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nettuts+ Fetch/Fetch.py",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nettuts+ Fetch/.gitignore",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nettuts+ Fetch/Fetch.pyc",
+				"/C/Users/Romain/find",
+				"/C/Users/Romain/.gitconfig.old",
+				"/C/Users/Romain/.gitconfig",
+				"/C/Users/Romain/.ssh.bak/id_rsa.pub",
+				"/D/romain/.ssh/id_rsa.pub",
+				"/D/romain/.ssh/id_rsa.ppk",
+				"/D/romain/.ssh/id_rsa",
+				"/C/Users/Romain/.ssh.bak/id_rsa",
+				"/C/Users/Romain/.ssh.bak/config",
+				"/C/Users/Romain/.ssh.bak/known_hosts",
+				"/C/Users/Romain/.ssh.ok/known_hosts",
+				"/D/romain/.ssh/README",
+				"/D/romain/.ssh/known_hosts",
+				"/C/Users/Romain/.ssh.ok/id_rsa.pub",
+				"/C/Users/Romain/.ssh.ok/id_rsa.ppk",
+				"/C/Users/Romain/.ssh.ok/id_rsa",
+				"/C/Users/Romain/.ssh/id_rsa.pub",
+				"/D/romain/pomeh13_at_gmail.com.ssh.key.id_rsa.ppk",
+				"/D/romain/pomeh13_at_gmail.com.ssh.key.id_rsa.pub",
+				"/C/Git/.ssh/known_hosts",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/SFTP/SFTP.sublime-settings",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/SFTP/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Settings/Session.sublime_session",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Settings/Auto Save Session.sublime_session",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Installed Packages/Package Control.sublime-package",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nodejs/lib/command_thread.py",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Nodejs/lib/__init__.py",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Language - English/en_US.dic",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Language - English/README_en_GB.txt",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Language - English/en_GB.aff",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Default/Base File.sublime-settings"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+					"D:\\romain\\dotfiles\\Sublime Text 2\\Packages\\SideBarGit"
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": true,
+				"find_history":
+				[
+					"tabTrigger",
+					"html",
+					"css-tricks",
+					"http://css-tricks.com/snippets/css/useful-css3-less-mixins/",
+					"css-tricks",
+					"file:///C:/Users/Romain/Desk",
+					"ICAjb4U/gAAAAPFBMVEX////W1tb29vbf39/Fki3//////5n/95H/9I7/64X/4Hvf39/W1tb/1G//zGbms07Fki2Hh4dsbGxLS0vxznl1AAAAFHRSTlMAESIiu////////////////////w6FHE8AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzQGstOgAAAAFnRFWHR",
+					"VQICAjb4U/gA",
+					"iVBORw0KG",
+					"--",
+					"-->",
+					"autoprom",
+					"<script",
+					"meta",
+					"(pyc|cache)",
+					"^.*[^(pyc|cache)].*$",
+					"(pyc|cache)",
+					" -",
+					"i",
+					"push",
+					"status",
+					"[^\\s\\t]+([\\s\\t]{2,})(.+)$",
+					".+([\\s\\t]{2,})(.+)$",
+					".+([\\s]{2,}(.+)$",
+					".+([\\s\\t]{2,}(.+)$",
+					"keys",
+					"meta",
+					"description",
+					"title",
+					">",
+					"the",
+					"in",
+					"show",
+					"still",
+					"jpeg",
+					"hot_exit",
+					"Changing",
+					"hot_exit",
+					"html",
+					"test_submit",
+					"function",
+					"		",
+					"plugin"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": true,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/D/romain/dotfiles"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 3,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/C/Users/Romain/Desktop/favoris_home_19_02_12.html",
+							"settings":
+							{
+								"buffer_size": 561043,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/C/Users/Romain/Desktop/favoris_js.js",
+							"settings":
+							{
+								"buffer_size": 760,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										484,
+										484
+									]
+								],
+								"settings":
+								{
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/h5bp.sublime-snippet",
+							"settings":
+							{
+								"buffer_size": 3016,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2918,
+										2918
+									]
+								],
+								"settings":
+								{
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/XML/XML.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 864.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/JavaScript/for-()-{}.sublime-snippet",
+							"settings":
+							{
+								"buffer_size": 260,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										205,
+										248
+									]
+								],
+								"settings":
+								{
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/XML/XML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML/html.sublime-snippet",
+							"settings":
+							{
+								"buffer_size": 265,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										265,
+										265
+									]
+								],
+								"settings":
+								{
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/XML/XML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/C/Users/Romain/AppData/Local/Temp/scp18849/www/cnam/pleiad.html",
+							"settings":
+							{
+								"buffer_size": 108,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										92,
+										92
+									]
+								],
+								"settings":
+								{
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/C/Users/Romain/.ssh/id_rsa.pub",
+							"settings":
+							{
+								"buffer_size": 399,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										399,
+										399
+									]
+								],
+								"settings":
+								{
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 32.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.sftp":
+			{
+				"height": 126.0
+			},
+			"position": "0,2,2,-32000,-32000,-1,-1,705,308,169,964",
+			"replace":
+			{
+				"height": 62.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+					[
+						".gitign",
+						"Sublime Text 2/Packages/SideBarGit/.gitignore"
+					],
+					[
+						".gitigno",
+						"Sublime Text 2/Packages/Git/.gitignore"
+					],
+					[
+						".gii",
+						".gitignore"
+					],
+					[
+						"subliproject",
+						"Sublime Text 2/Packages/SublimeCodeIntel/libs/codeintel2/lib_srcs/node.js/global_objects.js"
+					],
+					[
+						"sidegit/",
+						"Sublime Text 2/Packages/SideBarGit/Context.sublime-menu"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 263.0,
+			"status_bar_visible": true,
+			"window_id": 5,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

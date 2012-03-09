@@ -1,30 +1,90 @@
-import sublime, sublime_plugin, re
+import sublime, sublime_plugin
+from Tag import Tag
+
+Tag = Tag()
 
 class TagCloseTagOnSlashCommand(sublime_plugin.TextCommand):
-	def run(self, edit):
-		closeTags = False;
-		for region in self.view.sel():
-			cursorPosition = region.begin()
-			previousCharacter = self.view.substr(sublime.Region(cursorPosition - 1, cursorPosition))
 
-			if '<' == previousCharacter and self.view.score_selector(cursorPosition, 'text.html | text.xml') > 0:
-				syntax = self.view.syntax_name(region.begin())
-				should_skip = re.match(".*string.quoted.double", syntax) or re.match(".*string.quoted.single", syntax)
-				if not should_skip:
-					self.view.erase(edit, sublime.Region(cursorPosition - 1, cursorPosition))
-					closeTags = True;
+	def run(self, edit):
+
+		view = self.view
+
+		closed_some_tag = False
+		new_selections = []
+		new_selections_insert = []
+
+		for region in view.sel():
+			cursorPosition = region.begin()
+			previousCharacter = view.substr(sublime.Region(cursorPosition - 1, cursorPosition))
+
+			if '<' == previousCharacter:
+				tag = self.close_tag(view.substr(sublime.Region(0, cursorPosition)))
+				if region.empty():
+					replace = False
+					view.insert(edit, cursorPosition, tag);
 				else:
-					if region.empty():
-						self.view.insert(edit, cursorPosition, '/');
+					replace = True
+					view.replace(edit, sublime.Region(region.begin(), region.end()), '');
+					view.insert(edit, cursorPosition, tag);
+				if tag != '/':
+					closed_some_tag = True
+					if replace:
+						new_selections_insert.append(sublime.Region(region.begin()+len(tag), region.begin()+len(tag)))
 					else:
-						self.view.replace(edit, sublime.Region(region.begin(), region.end()), '/');
+						new_selections_insert.append(sublime.Region(region.end()+len(tag), region.end()+len(tag)))
+				else:
+					new_selections.append(sublime.Region(region.end()+len(tag), region.end()+len(tag)))
 			else:
 				if region.empty():
-					self.view.insert(edit, cursorPosition, '/');
+					view.insert(edit, cursorPosition, '/');
 				else:
-					self.view.replace(edit, sublime.Region(region.begin(), region.end()), '/');
-		if closeTags:
-			self.view.run_command('close_tag');
-			if self.view.window():
-				self.view.window().show_input_panel("boo!", '', '', None, None)
-				self.view.window().run_command('hide_panel');
+					view.replace(edit, sublime.Region(region.begin(), region.end()), '/');
+				new_selections.append(sublime.Region(region.end(), region.end()))
+
+		view.sel().clear()
+
+		# we inserted the "</tagname" part.
+		# running the command "insert" with parameter ">" to allow
+		# to the application indent these tags correctly
+		if closed_some_tag:
+			view.run_command('hide_auto_complete')
+			for sel in new_selections_insert:
+				view.sel().add(sel)
+			view.run_command('insert',  {"characters": ">"})
+
+		for sel in new_selections:
+			view.sel().add(sel)
+
+	def close_tag(self, data):
+
+		data = data.split('<')
+		data.reverse()
+		data.pop(0);
+
+		try:
+			i = 0
+			lenght = len(data)-1
+			while i < lenght:
+				tag = Tag.name(data[i])
+				# if opening tag, close the tag
+				if tag and not Tag.is_closing(data[i]):
+					return '/'+Tag.name(data[i])+''
+				# if closing tag, jump to opening tag
+				else:
+					if tag:
+						i = i+1
+						skip = 0
+						while i < lenght:
+							if Tag.name(data[i]) == tag:
+								if not Tag.is_closing(data[i]):
+									if skip == 0:
+										break
+									else:
+										skip = skip-1
+								else:
+									skip = skip+1
+							i = i+1
+				i = i+1
+			return '/'
+		except:
+			return '/';

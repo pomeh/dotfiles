@@ -1,6 +1,8 @@
 <snippet>
-	<content><![CDATA[<html>
+	<content><![CDATA[<!doctype html>
+<html>
 <head>
+    <meta charset="utf-8">
 	<title>$1</title>
 </head>
 <body>
@@ -9,4 +11,5 @@ $0
 </html>]]></content>
 	<tabTrigger>html</tabTrigger>
 	<scope>text.html</scope>
+    <description>basic html doc</description>
 </snippet>

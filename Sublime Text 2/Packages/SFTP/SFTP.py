@@ -87,7 +87,9 @@ from sftp.commands import (SftpShowPanelCommand, SftpCreateServerCommand,
     SftpUploadFolderCommand, SftpSyncUpCommand, SftpSyncDownCommand,
     SftpSyncBothCommand, SftpDownloadFolderCommand, SftpVcsChangedFilesCommand,
     SftpCancelUploadCommand, SftpEditConfigCommand, SftpCreateConfigCommand,
-    SftpCreateSubConfigCommand, SftpThread)
+    SftpCreateSubConfigCommand, SftpThread,
+    SftpDeleteLocalAndRemotePathsCommand, SftpSwitchConfigCommand,
+    SftpCreateAltConfigCommand)
 from sftp.listeners import (SftpCloseListener, SftpLoadListener,
     SftpFocusListener, SftpAutoUploadListener, SftpAutoConnectListener)
 
