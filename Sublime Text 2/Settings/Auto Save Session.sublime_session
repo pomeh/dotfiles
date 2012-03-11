@@ -365,6 +365,18 @@
 				"selected_items":
 				[
 					[
+						"input",
+						"input	input - date"
+					],
+					[
+						"inpu",
+						"input	input - number"
+					],
+					[
+						"inp",
+						"input	input - text"
+					],
+					[
 						"ajax",
 						"ajax	Google AJAX Libraries: jQuery"
 					],
@@ -393,10 +405,6 @@
 						"h5bp	h5bp"
 					],
 					[
-						"input",
-						"input	input - text"
-					],
-					[
 						"link",
 						"link	link - stylesheet"
 					],
@@ -417,10 +425,7 @@
 					}
 				},
 				{
-					"contents": "var allLinks = document.querySelectorAll('a'), orderedLinks, emptyLinks, hrefs;\n\nallLinks = Array.prototype.concat.apply( [], allLinks );\n//allLinks = allLinks.splice( 70, 10 );\n\norderedLinks = allLinks;\n/*orderedLinks = orderedLinks.sort(function( a, b ){\n	return ( a.href === b.href ) ? 0 : ( a.href >= b.href ) ? 1 : -1;\n});*/\n\n\nhrefs = orderedLinks.map(function(el) { return el.href; });\nemptyLinks = orderedLinks.filter(function(el) {\n	if( !el.text )\n	{\n		return el.href;\n	}\n});\n\nallLinks.forEach(function( link ) {\n	if( link.getAttribute(\"icon\") )\n	{\n		link.className = \"\"; // \"image\";\n		link.style.backgroundImage = \"url('\" + link.getAttribute(\"icon\") + \"')\";\n		link.style.backgroundRepeat = \"no-repeat\";\n		link.style.paddingLeft = \"20px\";\n	}\n});\n\n\n\n\n0\n",
 					"file": "/C/Users/Romain/Desktop/favoris_js.js",
-					"file_size": 793,
-					"file_write_time": 129741664864310000,
 					"settings":
 					{
 						"buffer_size": 760,
@@ -428,60 +433,95 @@
 					}
 				},
 				{
-					"contents": "",
+					"contents": "<!doctype html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Le CNAM</title>\n    <style>\n	    .region > li > a, .departement > li > span {\n	    	cursor: pointer;\n	    }\n    	a, a:hover, a:visited, a:active {\n    		color: blue;\n    	}\n    	.zone > li:before {\n    		content: \"ZONE \";\n    	}\n    	.region > li > a:before {\n    		content: \"région \";\n    	}\n    	.departement > li:before {\n    		content: \"département \";\n    	}\n    	.ville > li:before {\n    		content: \"ville \";\n    	}\n    	.siege {\n    		font-weight: bold;\n    	}\n    	.siege:after {\n    		content: \" (siège)\";\n    	}\n    </style>\n</head>\n<body>\n	<a href=\"http://www.pleiad.net\">Plei@d.net</a>\n\n	<form action=\"#\" method=\"get\">\n		<input type=\"text\" name=\"nom\" placeholder=\"nom\">\n		<input type=\"text\" name=\"prenom\" placeholder=\"prenom\">\n		<input type=\"date\" name=\"datenaissance\" placeholder=\"01/01/1980\">\n	</form>\n\n	<ul class=\"zone\">\n		<li>\n			Sud est <a class=\"pleiad\" href=\"http://sudest.pleiad.net/\">plei@d</a> <i>(6 premières lettre du nom, jour de naissance, 2 premières lettres du prénom)</i>\n			<span style=\"display:none;\">guerin29ro/xxx</span>\n			<ul class=\"region\">\n				<li>\n					<a href=\"http://www.cnam-paca.fr/\">PACA</a>\n					<ul class=\"departement\">\n						<li>\n							Bouches-du-Rhône\n							<ul class=\"ville\">\n								<li>Aix</li>\n								<li class=\"siege\">Marseille</li>\n								<li>Istres</li>\n							</ul>\n						</li>\n						<li>\n							Vaucluse\n							<ul class=\"ville\">\n								<li>Avignon</li>\n							</ul>\n						</li>\n						<li>\n							Var\n							<ul class=\"ville\">\n								<li>Toulon</li>\n							</ul>\n						</li>\n						<li>\n							Alpes-Maritimes\n							<ul class=\"ville\">\n								<li>Nice</li>\n							</ul>\n						</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-lr.fr/\">Languedoc Roussillon</a>\n					<ul class=\"departement\">\n						<li>\n							Hérault\n						<ul class=\"ville\">\n							<li class=\"siege\">Montpellier</li>\n						</ul>\n						</li>\n						<li>\n							Pyrénées-Orientales\n							<ul class=\"ville\">\n								<li>Perpignan</li>\n							</ul>\n						</li>\n						<li>\n							Gard\n							<ul class=\"ville\">\n								<li>Nimes</li>\n						<li>Bagnols-sur-Cèze</li>\n							</ul>\n						</li>\n						<li>\n							Lozère\n							<ul class=\"ville\">\n								<li>Mende</li>\n							</ul>\n						</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-rhonealpes.fr/\">Rhone-Alpes</a>\n					<ul class=\"ville\">\n						<li class=\"siege\">Lyon</li>\n						<li>Saint-Etienne</li>\n						<li>Grenoble</li>\n						<li>Saint-Genis-Pouilly</li>\n						<li>Aubenas</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-auvergne.asso.fr/\">Auvergne</a>\n					<ul class=\"ville\">\n						<li class=\"siege\">Clermont-Ferrand</li>\n						<li>Montluçon</li>\n					</ul>\n				</li>\n				<li>\n					Corse\n					<ul class=\"ville\">\n						<li>Ajaccio</li>\n						<li class=\"siege\">Bastia</li>\n						<li>Porto-Vecchio</li>\n					</ul>\n				</li>\n			</ul>\n		</li>\n\n\n		<li>\n			Sud ouest <a class=\"pleiad\" href=\"http://sudouest.pleiad.net/\">plei@d</a>\n			<ul class=\"region\">\n				<li>\n					<a href=\"http://www.cnam-aquitaine.fr/\">Aquitaine</a>\n					<ul class=\"ville\">\n						<li class=\"siege\">Bordeaux</li>\n						<li>Pau</li>\n						<li>Bayonne/Anglet</li>\n						<li>Périgueux</li>\n						<li>Agen</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-limousin.fr/\">Limousin</a>\n					<ul class=\"ville\">\n						<li class=\"siege\">Limoges</li>\n						<li>Brive</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.ipst-cnam.fr/\">Midi-Pyrénées</a>\n					<ul class=\"ville\">\n						<li>Albi</li>\n						<li>Millau</li>\n						<li>Tarbes</li>\n						<li class=\"siege\">Toulouse</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-poitou-charentes.fr/\">Poitou Charentes</a>\n					<ul class=\"ville\">\n						<li>Angoulême</li>\n						<li>La Rochelle</li>\n						<li>Niort</li>\n						<li class=\"siege\">Poitiers-Futuroscope</li>\n					</ul>\n				</li>\n			</ul>\n		</li>\n\n\n		<li>\n			Ile de France <a class=\"pleiad\" href=\"http://idf.pleiad.net/\">plei@d</a>\n			<ul class=\"region\">\n				<li>\n					<a href=\"http://www.cnam-centre.org/\">Centre</a>\n					<ul class=\"ville\">\n						<li class=\"siege\">Orléans</li>\n						<li>Blois</li>\n						<li>Chartres</li>\n						<li>Dreux</li>\n						<li>Tours</li>\n						<li>Bourges</li>\n						<li>Châteauroux</li>\n						<li>Vierzon</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-idf.fr/\">Ile de France</a>\n					<ul class=\"departement\">\n						<li>\n							Seine et marne\n							<ul class=\"ville\">\n								<li>Marne la vallée</li>\n								<li>Melun-Senart</li>\n							</ul>\n						</li>\n						<li>\n							Essone\n							<ul class=\"ville\">\n								<li>Evry</li>\n								<li>Massy</li>\n							</ul>\n						</li>\n						<li>\n							Yvelines\n							<ul class=\"ville\">\n								<li>Mantes la jolie</li>\n								<li>Poissy</li>\n								<li>Versailles</li>\n							</ul>\n						</li>\n						<li>\n							Val d'Oise\n							<ul class=\"ville\">\n								<li>Cergy-Pontoise</li>\n								<li>Sarcelles</li>\n							</ul>\n						</li>\n						<li>\n							Seine-saint-Denis\n							<ul class=\"ville\">\n								<li>Aulnay</li>\n								<li>Montreuil</li>\n								<li>Saint-Denis</li>\n							</ul>\n						</li>\n						<li>\n							Marne\n							<ul class=\"ville\">\n								<li>Créteil</li>\n							</ul>\n						</li>\n						<li>\n							Hauts de Seine\n							<ul class=\"ville\">\n								<li>Bois Colombes</li>\n								<li>Boulogne</li>\n								<li>Clichy</li>\n								<li>La Défense</li>\n							</ul>\n						</li>\n						<li>\n							Paris\n							<ul class=\"ville\">\n								<li>Paris centre</li>\n								<li>Les Gobelins</li>\n								<li>Porte de Pantin</li>\n							</ul>\n						</li>\n					</ul>\n				</li>\n			</ul>\n		</li>\n\n\n		<li>\n			Nord est <a class=\"pleiad\" href=\"http://ne.pleiad.net/\">plei@d</a> <i>(première lettre du prénom, nom)</i>\n			<span style=\"display:none;\">rguerin/xxx</span>\n			<ul class=\"region\">\n				<li>\n					<a href=\"http://www.cnam-alsace.fr/\">Alsace</a>\n					<ul class=\"ville\">\n						<li>Colmar</li>\n						<li class=\"siege\">Mulhouse</li>\n						<li>Strasbourg</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-lorraine.fr/\">Lorraine</a>\n					<ul class=\"ville\">\n						<li>Épinal</li>\n						<li>Longwy</li>\n						<li>Metz</li>\n						<li>Forbach</li>\n						<li class=\"siege\">Nancy</li>\n						<li>Saint Dié</li>\n						<li>Colmar</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-champagne-ardenne.fr/\">Champagne Ardenne</a>\n					<ul class=\"ville\">\n						<li>Châlons-en-Champagne</li>\n						<li>Charleville-Mézières</li>\n						<li class=\"siege\">Reims</li>\n						<li>Troyes</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.formationcnampicardie.com/\">Picardie</a>\n					<ul class=\"ville\">\n						<li class=\"siege\">Amiens</li>\n						<li>Beauvais</li>\n						<li>Compiègne</li>\n						<li>Laon</li>\n						<li>Nogent-sur-Oise</li>\n						<li>Saint-Quentin</li>\n						<li>Senlis</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-bourgogne.com/\">Bourgogne</a>\n					<ul class=\"ville\">\n						<li>Auxerre</li>\n						<li class=\"siege\">Chalon-sur-Saône</li>\n						<li>Dijon</li>\n						<li>Nevers</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-franche-comte.fr/\">Franche-Comté</a>\n					<ul class=\"ville\">\n						<li class=\"siege\">Belfort</li>\n						<li>Besançon</li>\n						<li>Luxeul-les-Bains</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-npdc.org/\">Nord-pas-de-Calais</a>\n					<ul class=\"ville\">\n						<li class=\"siege\">Lille</li>\n						<li>Béthune</li>\n						<li>Maubeuge</li>\n						<li>Valenciennes</li>\n					</ul>\n				</li>\n			</ul>\n		</li>\n\n\n		<li>\n			Ouest <a class=\"pleiad\" href=\"http://ouest.pleiad.net/\">plei@d</a> <i>(6 premières lettre du nom, jour de naissance, 2 premières lettres du prénom)</i>\n			<span style=\"display:none;\">guerin29ro/xxx</span>\n			<ul class=\"region\">\n				<li>\n					<a href=\"http://www.cnambn.fr/\">Basse normandie</a>\n					<ul class=\"ville\">\n						<li>Alençon</li>\n						<li class=\"siege\">Caen</li>\n						<li>Cherbourg</li>\n						<li>Saint-Lô</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-bretagne.fr/\">Bretagne</a>\n					<ul class=\"ville\">\n						<li>Brest</li>\n						<li>Dinan</li>\n						<li>Lannion</li>\n						<li class=\"siege\">Ploufragan/Saint-Brieuc</li>\n						<li>Rennes</li>\n						<li>Vannes</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://cnam.univ-ag.fr/\">Guadeloupe</a>\n					<ul class=\"ville\">\n						<li>Abymes</li>\n						<li>Saint-Martin</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-haute-normandie.com/\">Haute normandie</a>\n					<ul class=\"ville\">\n						<li>Elbeuf</li>\n						<li>Evreux</li>\n						<li class=\"siege\">Rouen</li>\n						<li>Le Havre</li>\n					</ul>\n				</li>\n				<li>\n					<a href=\"http://www.cnam-paysdelaloire.fr/\">Pays de la Loire</a>\n					<ul class=\"ville\">\n						<li>Angers</li>\n						<li>Cholet</li>\n						<li>La Roche-sur-Yon</li>\n						<li>Laval</li>\n						<li>Le Mans</li>\n						<li class=\"siege\">Nantes</li>\n						<li>Saint-Nazaire</li>\n					</ul>\n				</li>\n			</ul>\n		</li>\n	</ul>\n\n	<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js\"></script>\n	<script>\n	!function( $, undefined ) {\n\n		var $formAuditeur = $( \"form\" ),\n			$liensPleiad = $( \".pleiad\" ),\n			loginPage = \"controle.php\";\n\n		function updateLiensConnexion() {\n			$liensPleiad.each(function( i, el ){\n				var $lien = $( this ),\n					homepage = $lien.attr(\"data-homepage\"),\n					params = [],\n					nom = \"guerin\",\n					prenom = \"romain\",\n					jour = \"29\",\n					mois = \"05\",\n					annee = \"1989\";\n\n				if( !homepage ) {\n					homepage = this.href;\n					$lien.attr( \"data-homepage\", homepage );\n				}\n\n				params.push( \"Login=\" );\n				params.push( \"Password=\" );\n				params.push( \"RId=Compte\" );\n\n				this.href = [ homepage, loginPage, \"?\", params.join(\"&\") ].join(\"\");\n			});\n		}\n\n		$( \".departement\" ).slideUp();\n\n		$( \".region > li\" ).on( \"click\", function(ev) {\n			$(this).find( \"> ul\" ).stop().slideToggle( 300 );\n			ev.stopPropagation();\n		});\n\n		$formAuditeur.on( \"change\", \"input\", function( ev ){\n			updateLiensConnexion();\n			ev.stopPropagation();\n		});\n		updateLiensConnexion();\n\n	} ( jQuery );\n	</script>\n</body>\n</html>",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 10173,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/h5bp.sublime-snippet",
+					"contents": "import sublime, sublime_plugin\n\nclass ExampleCommand(sublime_plugin.TextCommand):\n	def run(self, edit):\n		self.view.insert(edit, 0, \"Hello, World!\")\n",
 					"settings":
 					{
-						"buffer_size": 3016,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/JavaScript/for-()-{}.sublime-snippet",
-					"settings":
-					{
-						"buffer_size": 260,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML/html.sublime-snippet",
-					"settings":
-					{
-						"buffer_size": 265,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/C/Users/Romain/AppData/Local/Temp/scp18849/www/cnam/pleiad.html",
-					"settings":
-					{
-						"buffer_size": 108,
+						"buffer_size": 149,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Users/Romain/.ssh/id_rsa.pub",
+					"contents": "hello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello",
+					"file": "/D/romain/Dropbox/dotfiles/test.txt",
+					"file_size": 1440,
+					"file_write_time": 129759725215020000,
 					"settings":
 					{
-						"buffer_size": 399,
-						"line_ending": "Unix"
+						"buffer_size": 1235,
+						"line_ending": "Windows"
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 392.0,
+				"height": 127.0,
 				"selected_items":
 				[
+					[
+						"brow",
+						"Preferences: Browse Packages"
+					],
+					[
+						"keyde",
+						"Preferences: Key Bindings - Default"
+					],
+					[
+						"keyu",
+						"Preferences: Key Bindings - User"
+					],
+					[
+						"bropa",
+						"Preferences: Browse Packages"
+					],
+					[
+						"synhtm",
+						"Set Syntax: HTML"
+					],
+					[
+						"synhtml",
+						"Set Syntax: HTML"
+					],
+					[
+						"syntht",
+						"Set Syntax: HTML5"
+					],
+					[
+						"color",
+						"Color picker"
+					],
+					[
+						"whit",
+						"Snippet: <label> with <input>"
+					],
+					[
+						"snigoogljq",
+						"Snippet: Google AJAX Libraries: jQuery"
+					],
+					[
+						"fol",
+						"Code Folding: Unfold All"
+					],
+					[
+						"wrap",
+						"Snippet: Wrap Selection in Open/Close Tag"
+					],
+					[
+						"key",
+						"Preferences: Key Bindings - Default"
+					],
+					[
+						"wra",
+						"HTML: Wrap Selection With Tag"
+					],
 					[
 						"snipajq",
 						"Snippet: Google AJAX Libraries: jQuery"
@@ -523,24 +563,12 @@
 						"Package Control: Install Package"
 					],
 					[
-						"wrap",
-						"Word Wrap: Toggle"
-					],
-					[
-						"key",
-						"Preferences: Key Bindings - User"
-					],
-					[
 						"pai",
 						"Package Control: Install Package"
 					],
 					[
 						"trail",
 						"Trailing Spaces: Delete Trailing Spaces"
-					],
-					[
-						"synhtml",
-						"Set Syntax: HTML"
 					],
 					[
 						"syntahtml",
@@ -553,10 +581,6 @@
 					[
 						"fetc",
 						"Fetch: Manage remote files"
-					],
-					[
-						"brow",
-						"Preferences: Browse Packages"
 					],
 					[
 						"settings",
@@ -691,7 +715,7 @@
 						"Snippet: Lorem ipsum"
 					]
 				],
-				"width": 536.0
+				"width": 424.0
 			},
 			"console":
 			{
@@ -708,12 +732,29 @@
 			},
 			"file_history":
 			[
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/D/romain/Dropbox/dotfiles/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/Romain/AppData/Local/Temp/scp17093/www/cnam/pleiad.html",
+				"/D/romain/Dropbox/Public/Comment utiliser le dossier Public.txt",
+				"/D/romain/Dropbox/Photos/Comment utiliser le dossier Photos.txt",
+				"/C/Users/Romain/AppData/Local/Temp/scp09290/www/cnam/pleiad.html",
+				"/C/Users/Romain/AppData/Local/Temp/scp09097/www/cnam/pleiad.html",
+				"/C/Users/Romain/AppData/Local/Temp/scp50654/www/cnam/pleiad.html",
+				"/C/Users/Romain/AppData/Local/Temp/scp48043/www/cnam/pleiad.html",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/XML/long-tag.sublime-snippet",
+				"/C/Users/Romain/AppData/Local/Temp/scp47010/www/cnam/pleiad.html",
+				"/C/Users/Romain/AppData/Local/Temp/scp44458/www/cnam/pleiad.html",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/h5bp.sublime-snippet",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/JavaScript/for-()-{}.sublime-snippet",
+				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML/html.sublime-snippet",
+				"/C/Users/Romain/.ssh/id_rsa.pub",
+				"/C/Users/Romain/AppData/Local/Temp/scp18849/www/cnam/pleiad.html",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Package Control/certs/ca-bundle.crt",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Package Control/certs/2ef52a20816f8df1e4cb13199caf1e21",
 				"/C/Users/Romain/.ssh/id_rsa",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML5/Elements/html.sublime-snippet",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML5/Javascript Libraries/Google AJAX Libraries - Dojo.sublime-snippet",
-				"/C/Users/Romain/AppData/Local/Temp/scp18849/www/cnam/pleiad.html",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML/HTML.sublime-completions",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/JavaScript/for-()-{}-(faster).sublime-snippet",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Pristine Packages/JavaScript.sublime-package",
@@ -747,8 +788,6 @@
 				"/C/Users/Romain/Desktop/fdj-order.html",
 				"/C/Users/Romain/Desktop/fdj-original.html",
 				"/C/Users/Romain/Desktop/fdj-edit.html",
-				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
 				"/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/Default/Global.sublime-settings",
 				"//pc-bureau/Romain/__GINCKO/hosts",
@@ -792,7 +831,6 @@
 				"/C/Users/Romain/.ssh.ok/id_rsa.pub",
 				"/C/Users/Romain/.ssh.ok/id_rsa.ppk",
 				"/C/Users/Romain/.ssh.ok/id_rsa",
-				"/C/Users/Romain/.ssh/id_rsa.pub",
 				"/D/romain/pomeh13_at_gmail.com.ssh.key.id_rsa.ppk",
 				"/D/romain/pomeh13_at_gmail.com.ssh.key.id_rsa.pub",
 				"/C/Git/.ssh/known_hosts",
@@ -824,9 +862,47 @@
 			},
 			"find_state":
 			{
-				"case_sensitive": true,
+				"case_sensitive": false,
 				"find_history":
 				[
+					"ctrl+l",
+					"ctrl+d",
+					"<a href=\"http://(.+)/\">site</a>",
+					"<a href=\"http://(.+)/?\">site</a>",
+					"<(input|select)",
+					"ouest",
+					"					<a href=\"(.+)\">(.+)</a>",
+					"					<a href=\"(.+)\">(PACA)</a>",
+					"=",
+					"\n						<li>\n							Hérault\n						</li>",
+					"departement",
+					"dep",
+					">(.+) \\(siège\\)<",
+					">.+ \\(siège\\)<",
+					"Poitiers",
+					"Valenciennes",
+					"Toulouse",
+					"Épinal",
+					"Saint",
+					"sud oues",
+					"ne.",
+					"class=\"centre\"",
+					"Vierzon",
+					"Angers",
+					"						",
+					"Pau",
+					"Montluçon",
+					"Grenoble",
+					"Etienne",
+					"Perpignan",
+					"Nimes",
+					"Mende",
+					"Montpellier",
+					")",
+					"wrap",
+					"basse",
+					"auv",
+					"li",
 					"tabTrigger",
 					"html",
 					"css-tricks",
@@ -874,9 +950,14 @@
 				"highlight": true,
 				"in_selection": false,
 				"preserve_case": false,
-				"regex": true,
+				"regex": false,
 				"replace_history":
 				[
+					"<a href=\"http://\\1\">\\1</a>",
+					"					<h2>\\2</h2> <a href=\"\\1\">site</a>",
+					"					<h2>\\1</h2> <a href=\"\\2\">site</a>",
+					" class=\"siege\">\\1<",
+					"class=\"region\""
 				],
 				"reverse": false,
 				"show_context": true,
@@ -893,7 +974,7 @@
 			"groups":
 			[
 				{
-					"selected": 3,
+					"selected": 4,
 					"sheets":
 					[
 						{
@@ -904,12 +985,25 @@
 								"buffer_size": 561043,
 								"regions":
 								{
+									"TagLint":
+									{
+										"flags": 20,
+										"icon": "dot",
+										"regions":
+										[
+											[
+												266,
+												270
+											]
+										],
+										"scope": "invalid"
+									}
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										701,
+										701
 									]
 								],
 								"settings":
@@ -938,8 +1032,8 @@
 								"selection":
 								[
 									[
-										484,
-										484
+										480,
+										480
 									]
 								],
 								"settings":
@@ -959,155 +1053,72 @@
 							"buffer": 2,
 							"settings":
 							{
-								"buffer_size": 0,
+								"buffer_size": 10173,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										883,
+										883
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"remote_loading": false,
+									"synced": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 457.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 3,
-							"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/User/h5bp.sublime-snippet",
 							"settings":
 							{
-								"buffer_size": 3016,
+								"buffer_size": 149,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2918,
-										2918
+										106,
+										106
 									]
 								],
 								"settings":
 								{
+									"default_dir": "C:\\Users\\Romain\\AppData\\Roaming\\Sublime Text 2\\Packages\\User",
 									"remote_loading": false,
 									"synced": false,
-									"syntax": "Packages/XML/XML.tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
+									"syntax": "Packages/Python/Python.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 864.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 4,
-							"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/JavaScript/for-()-{}.sublime-snippet",
+							"file": "/D/romain/Dropbox/dotfiles/test.txt",
 							"settings":
 							{
-								"buffer_size": 260,
+								"buffer_size": 1235,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										205,
-										248
-									]
-								],
-								"settings":
-								{
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/XML/XML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/C/Users/Romain/AppData/Roaming/Sublime Text 2/Packages/HTML/html.sublime-snippet",
-							"settings":
-							{
-								"buffer_size": 265,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										265,
-										265
-									]
-								],
-								"settings":
-								{
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/XML/XML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/C/Users/Romain/AppData/Local/Temp/scp18849/www/cnam/pleiad.html",
-							"settings":
-							{
-								"buffer_size": 108,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										92,
-										92
-									]
-								],
-								"settings":
-								{
-									"remote_loading": false,
-									"synced": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 7,
-							"file": "/C/Users/Romain/.ssh/id_rsa.pub",
-							"settings":
-							{
-								"buffer_size": 399,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										399,
-										399
+										1235,
+										1235
 									]
 								],
 								"settings":
@@ -1117,7 +1128,7 @@
 									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 2976.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -1206,7 +1217,7 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 263.0,
+			"side_bar_width": 252.0,
 			"status_bar_visible": true,
 			"window_id": 5,
 			"workspace_name": ""

@@ -3,6 +3,8 @@
 	{ "keys": ["alt+shift+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 	{ "keys": ["alt+c,alt+s"], "command": "side_bar_git_status", "args": {"paths": []} },
 
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+
 	{ "keys": ["ctrl+q"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["ctrl+shift+q"], "command": "toggle_comment", "args": { "block": true } }
 ]
