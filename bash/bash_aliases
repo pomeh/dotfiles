@@ -1,5 +1,5 @@
 alias ls='ls --color'
-alias l='ls -ACFhlp --color=always --group-directories-first --dereference-command-line --dereference-command-line-symlink-to-dir --literal'
+alias l='ls -ACFhlpv --color=always --group-directories-first --dereference-command-line --dereference-command-line-symlink-to-dir --literal'
 # A all but . & ..
 # C column
 # --color=always
@@ -11,6 +11,8 @@ alias l='ls -ACFhlp --color=always --group-directories-first --dereference-comma
 # l long listing format
 # --literal raw entry names
 # -p / after directories-first
+# -v natural sort, this cause to group hidden folders/files together
+# -X sort alphabetically by entry extension, no longer used
 alias cls='clear'
 alias cl='clear; l'
 alias ping='ping -c 4'
