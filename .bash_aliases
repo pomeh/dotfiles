@@ -31,3 +31,6 @@ alias profileme="history 1 | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}
 alias systemname="uname -s" # Sets 'Darwin' or 'Linux' etc
 
 
+# alias n="node"
+
+
